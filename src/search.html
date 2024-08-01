@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="output.css" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+			rel="stylesheet" />
+		<title>Frontend Mentor | Advice generator app</title>
+	</head>
+	<body
+		class="bg-Dark-Blue mobile:h-[100hv] font-Manrop desktop:flex desktop:flex-col desktop:justify-center desktop:items-center desktop:m-48">
+		<div
+			class="bg-Grayish-Blue mx-4 p-8 rounded-xl h-fit flex flex-col gap-4 items-center justify-center">
+			<input id="search-input" type="search" placeholder="Search..." class="border rounded-full p-4" />
+			<button id="search-btn" class="bg-Neon-Green p-4 rounded-full"><img src="/images/magnifying-glass-svgrepo-com.svg" /></button>
+			<p class="text-Light-Cyan text-4xl font-bold text-center">"<span id="result"></span>"</p>
+		</div>
+		<script src="./search.js"></script>
+	</body>
+</html>

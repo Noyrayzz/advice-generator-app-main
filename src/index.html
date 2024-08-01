@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="output.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+			rel="stylesheet" />
+
+		<title>Frontend Mentor | Advice generator app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body
+		class="bg-Dark-Blue mobile:absolute mobile:top-1/4 font-Manrop desktop:flex flex-col desktop:justify-center desktop:items-center desktop:m-48">
+		<div
+			class="bg-Grayish-Blue mx-4 p-8 rounded-xl h-fit flex flex-col items-center justify-center">
+			<p
+				class="text-Neon-Green text-center my-7 desktop:text-2xl">ADVICE #<span id="adviceId"></span></p>
+
+			<p
+				id="adviceSlip"
+				class="text-Light-Cyan text-center text-2xl font-extrabold leading-relaxed">
+				""
+			</p>
+
+			<img
+				src="/images/pattern-divider-desktop.svg"
+				alt="pattern-divider-desktop"
+				class="my-8 mobile:hidden" />
+			<img
+				src="/images/pattern-divider-mobile.svg"
+				alt="pattern-divider-mobile"
+				class="my-8 desktop:hidden" />
+
+			<button	
+				type="button"
+				id="buttons"
+				class="bg-Neon-Green rounded-full p-4 flex justify-center items-center">
+				<img src="/images/icon-dice.svg" alt="dice" class="" />
+			</button>
+		</div>
+
+		<a href="./search.html" class="text-Light-Cyan my-4 text-4xl">search Page</a>
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+		<script src="./index.js"></script>
+	</body>
+</html>
